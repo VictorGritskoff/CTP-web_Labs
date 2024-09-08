@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета выбора недвижимости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Анкета выбора недвижимости</h1>
+
+<form action="/submit" method="POST">
+    <fieldset>
+        <legend>Вход в аккаунт</legend>
+        <label for="name">Имя пользователя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+ 
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Пароль" required><br><br>
+    </fieldset>
+
+    <form action="/" method="POST">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+
+    <fieldset>
+        <legend>Тип недвижимости</legend>
+        <label><input type="radio" name="property_type" value="apartment" required> Квартира</label><br>
+        <label><input type="radio" name="property_type" value="house"> Дом</label><br>
+        <label><input type="radio" name="property_type" value="land"> Земельный участок</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Предпочтения</legend>
+        <label><input type="checkbox" name="preferences" value="swimming_pool"> С бассейном</label><br>
+        <label><input type="checkbox" name="preferences" value="garage"> С гаражом</label><br>
+        <label><input type="checkbox" name="preferences" value="garden"> С садом</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Подписаться на рассылку</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Загрузка документов</legend>
+        <label for="documents">Загрузите документы:</label>
+        <input type="file" id="documents" name="documents"><br><br>
+    </fieldset>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сбросить">
+</form>
+
+</body>
+</html>
