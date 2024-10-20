@@ -1,0 +1,89 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .adaptive {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .one-two {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .four-five {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .six-seven {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      justify-content: stretch;
+    }
+  
+    .eight-nine {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      justify-content: stretch;
+    }
+  
+    .six-seven-eight-nine {
+      display: flex;
+      flex-direction: row;
+      justify-content: stretch;
+    }
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1399px) {
+    .adaptive {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .four-five {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .six-seven {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .eight-nine {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .six-seven-eight-nine {
+      display: flex;
+      flex-direction: column;
+    }
+  }
